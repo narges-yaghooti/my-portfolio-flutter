@@ -19,9 +19,16 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         pageTransitionsTheme: const PageTransitionsTheme(builders: {
           TargetPlatform.android: CupertinoPageTransitionsBuilder(),
-        }),
+          },
+        ),
       ),
-      home: SplashPage(),
+      home: MediaQuery.withClampedTextScaling(
+        /* Sets the minimum and maximum text scaling property to still look adequate */
+        minScaleFactor: 1,
+        maxScaleFactor: 1,
+        child: const SplashPage(),
+      ),
+      // home: SplashPage(),
     );
   }
 }

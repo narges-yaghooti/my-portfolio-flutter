@@ -13,7 +13,7 @@ class SkillsSlide extends StatelessWidget {
       color: AppColors.yellow,
       child: SizeHelper.isMobile(context)
           ? Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20),
+              padding: EdgeInsets.symmetric(horizontal: 36),
               child: Column(
                 children: skillsChildern(context),
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -35,7 +35,7 @@ class SkillsSlide extends StatelessWidget {
               'Meine Hauptfähigkeiten',
               style: TextStyle(
                 fontFamily: 'ProtestStrike',
-                fontSize: SizeHelper.isMobile(context) ? 26 : 54,
+                fontSize: SizeHelper.isMobile(context) ? 30 : 54,
                 // fontWeight: FontWeight.w900,
                 color: AppColors.yellow700,
                 height: 1.1,
@@ -53,7 +53,7 @@ class SkillsSlide extends StatelessWidget {
                   ? '* Zurzeit tauche ich tief in die Programmierung\n   ein und lerne neue Dinge.'
                   : '* Zurzeit tauche ich tief in die Programmierung ein und lerne neue Dinge.',
               style: TextStyle(
-                fontSize: SizeHelper.isMobile(context) ? 13 : 20,
+                fontSize: SizeHelper.isMobile(context) ? 15 : 22,
                 color: AppColors.yellow700,
                 // height: 1.1,
                 // letterSpacing: .7,
@@ -80,7 +80,7 @@ class SkillsSlide extends StatelessWidget {
           '-',
           style: TextStyle(
             fontFamily: 'ProtestStrike',
-            fontSize: SizeHelper.isMobile(context) ? 24 : 40,
+            fontSize: SizeHelper.isMobile(context) ? 26 : 40,
             // fontWeight: FontWeight.w900,
             color: AppColors.yellow700,
             height: 1.1,
@@ -93,7 +93,7 @@ class SkillsSlide extends StatelessWidget {
           title,
           style: TextStyle(
             fontFamily: 'ProtestStrike',
-            fontSize: SizeHelper.isMobile(context) ? 18 : 32,
+            fontSize: SizeHelper.isMobile(context) ? 22 : 32,
             color: AppColors.yellow700,
             height: 1.4,
           ),

@@ -56,15 +56,12 @@ class ContactSlide extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     backgroundColor: AppColors.cyan600,
-                    radius: SizeHelper.isMobile(context) ? 32 : 50,
-                    child: ClipOval(child: Image.asset('assets/prof2.jpeg')),
-                    // child: ClipOval(
-                    //   child: Image.network(
-                    //     'https://media.licdn.com/dms/image/D4D03AQGUEUwbJ7qAng/profile-displayphoto-shrink_400_400/0/1709107755732?e=1714608000&v=beta&t=ZuN7VTLcnWfS9_2szAtvEEG_MYDhfykSk-6tnxbGsQA',
-                    //   ),
-                    // ),
+                    radius: SizeHelper.isMobile(context) ? 38 : 70,
+                    child: ClipOval(
+                      child: Image.asset('assets/prof2.jpeg'),
+                    ),
                   ),
-                  const SizedBox(width: 10),
+                  SizedBox(width: SizeHelper.isMobile(context) ? 10 : 18),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -100,6 +97,7 @@ class ContactSlide extends StatelessWidget {
             ],
           ),
         ),
+     
       ],
     );
   }
