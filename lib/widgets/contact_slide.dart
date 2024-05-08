@@ -97,7 +97,6 @@ class ContactSlide extends StatelessWidget {
             ],
           ),
         ),
-     
       ],
     );
   }

@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
           FirstSlide(
             onTapItem: (selectedIndex) => _pageController.animateToPage(
               selectedIndex,
-              duration: Duration(milliseconds: 600 + (selectedIndex * 500)), 
+              duration: Duration(milliseconds: 600 + (selectedIndex * 500)),
               curve: Curves.easeOutExpo,
             ),
           ),

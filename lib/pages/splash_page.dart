@@ -47,10 +47,7 @@ class _SplashPageState extends State<SplashPage> {
             const Spacer(),
             const Text(
               '© 2024',
-              style: TextStyle(
-                fontSize: 12,
-                color: AppColors.purple700,
-              ),
+              style: TextStyle(fontSize: 12, color: AppColors.purple700),
             ),
             const SizedBox(height: 12),
           ],

@@ -14,7 +14,7 @@ class HeaderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(
-          vertical: SizeHelper.isMobile(context) ? 54 : 36, horizontal: 40),
+          vertical: SizeHelper.isMobile(context) ? 54 : 36, horizontal: 32),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
         color: AppColors.pink600,

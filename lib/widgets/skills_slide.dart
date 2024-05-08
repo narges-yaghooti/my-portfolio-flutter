@@ -9,6 +9,7 @@ class SkillsSlide extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(top: 60),
       height: MediaQuery.of(context).size.height,
       color: AppColors.yellow,
       child: SizeHelper.isMobile(context)
@@ -50,10 +51,10 @@ class SkillsSlide extends StatelessWidget {
             const SizedBox(height: 50),
             Text(
               SizeHelper.isMobile(context)
-                  ? '* Zurzeit tauche ich tief in die Programmierung\n   ein und lerne neue Dinge.'
+                  ? '* Zurzeit tauche ich tief in die Programmierung ein und lerne neue Dinge.'
                   : '* Zurzeit tauche ich tief in die Programmierung ein und lerne neue Dinge.',
               style: TextStyle(
-                fontSize: SizeHelper.isMobile(context) ? 15 : 22,
+                fontSize: SizeHelper.isMobile(context) ? 13 : 22,
                 color: AppColors.yellow700,
                 // height: 1.1,
                 // letterSpacing: .7,
@@ -67,8 +68,8 @@ class SkillsSlide extends StatelessWidget {
         ),
         SvgPicture.asset(
           'assets/statistics.svg',
-          width: 400,
-          height: 400,
+          width: SizeHelper.isMobile(context) ? 260 : 380,
+          height: SizeHelper.isMobile(context) ? 260 : 380,
         ),
       ];
 
